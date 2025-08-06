@@ -4,8 +4,10 @@
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 ![LangChain](https://img.shields.io/badge/LangChain-%E2%9C%94-green)
+[![PyPI version](https://img.shields.io/pypi/v/universal-offline-ai-chatbot.svg)](https://pypi.org/project/universal-offline-ai-chatbot/)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![Offline](https://img.shields.io/badge/Offline-LLM-orange)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 The **Universal Offline AI Chatbot** is a privacy-respecting, offline-ready assistant that can chat over **any set of PDFs**. It’s ideal for legal, cybersecurity, academic, enterprise, or technical domains.
 
@@ -101,6 +103,9 @@ Universal-Offline-AI-Chatbot/
 ├── setup.ps1              # PowerShell setup script
 ├── Dockerfile             # Docker image definition
 ├── .dockerignore
+├── setup.py             # PyPI config
+├── pyproject.toml       # Modern packaging metadata
+├── MANIFEST.in          # Source packaging rules
 ├── .env                   # Contains HF_TOKEN
 ├── README.md
 └── LICENSE
@@ -152,6 +157,20 @@ set HUGGINGFACEHUB_API_TOKEN=your_token         # Windows CMD
 ```bash
 python Bot.py
 ```
+
+## 📦 Install from PyPI
+
+```bash
+pip install universal-offline-ai-chatbot
+```
+
+After installation, you can launch the CLI like this:
+
+```bash
+universal-offline-ai-chatbot
+```
+
+> This runs the `main.py` CLI bundled in the PyPI package.
 
 ---
 
