@@ -1,0 +1,33 @@
+# Include essential files
+include README.md
+include LICENSE
+include pyproject.toml
+include setup.py
+
+# Include the folder containing your code
+recursive-include src *
+
+# Include any CLI entry-points, config files, etc.
+recursive-include src *.py
+recursive-include src *.json
+recursive-include src *.yml
+recursive-include src *.yaml
+recursive-include src *.ini
+
+# Include data files (if any)
+recursive-include src *.txt
+recursive-include src *.csv
+recursive-include src *.xml
+
+# Include assets if needed
+recursive-include src *.html
+recursive-include src *.js
+recursive-include src *.css
+recursive-include src *.ico
+recursive-include src *.png
+recursive-include src *.jpg
+recursive-include src *.ttf
+recursive-include src *.woff
+
+# Exclude unnecessary files
+global-exclude *.py[cod] __pycache__ *.so *.pyd .DS_Store .idea

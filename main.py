@@ -10,7 +10,8 @@ from src.vectorstore import build_vector_db, load_vector_db
 from src.qa_chain import setup_qa_chain
 import os
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
+def main():
     stylish_heading()
     print("\n📄 Loading documents and building knowledge base...")
 
